@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .main1 {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(81, 150, 228);
+        position: fixed;
+        margin: -10px;
+      }
+
+      .sub11 {
+        height: 80vh;
+        width: 90vw;
+        display: flex;
+        background-color: whitesmoke;
+        position: absolute;
+        top: 45px;
+        left: 60px;
+        border: 0px;
+        border-radius: 7% 0% 7% 0%;
+      }
+      .sub12 {
+        height: 50vh;
+        width: 40vw;
+        background-color: rgb(81, 150, 228);
+        color: whitesmoke;
+        position: absolute;
+        top: 95px;
+        left: 125px;
+        border: 0px;
+        border-radius: 7% 0% 7% 0%;
+        padding: 10px;
+      }
+      .sub13 {
+        height: 50vh;
+        width: 40vw;
+        background-color: rgb(81, 150, 228);
+        position: absolute;
+        top: 200px;
+        left: 630px;
+        border: 0px;
+        border-radius: 7% 0% 7% 0%;
+      }
+      .img1 {
+        height: 40vh;
+        width: 35vw;
+        position: absolute;
+        top: 230px;
+        left: 650px;
+        border: 3px solid whitesmoke;
+        border-radius: 7% 0% 7% 0%;
+      }
+      .btn1 {
+        background-color: rgb(81, 150, 228);
+        color: whitesmoke;
+        height: 35px;
+        width: 180px;
+        font-size: 25px;
+        margin-top: 10px;
+        margin-left: 25px;
+        border: 3px solid whitesmoke;
+        border-radius: 20% 0% 20% 0%;
+        transition: all 1s ease;
+      }
+      .btn1:hover {
+        background-color: whitesmoke;
+        color: black;
+        margin: 2px 2px 2px 2px;
+        border-radius: 0% 20% 0% 20%;
+      }
+      .sub4 {
+        display: none;
+        height: 50vh;
+        width: 40vw;
+        background-color: rgb(81, 150, 228);
+        position: absolute;
+        top: 200px;
+        left: 630px;
+        border: 0px;
+        border-radius: 7% 0% 7% 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main1">
+      <div class="sub11"></div>
+      <div class="sub12">
+        <h1 class="heading1">Hii, I'm Diwakar Chaudhary</h1>
+        <h1 class="heading2">
+          BCA 2nd year student .<span style="color: black"
+            >During learning Full Stack Development</span
+          >
+        </h1>
+        <button class="btn1" onclick="buttonClick()">Explore</button>
+      </div>
+      <div class="sub13"></div>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6WrEth5S2KWDohY5pWGZaSL1YUipMPQx4bkT9Fe4ZKw&s=10"
+        class="img1"
+      />
+    </div>
+    <div id="sub4" class="sub4">
+      <h2 id="heading">Welcome to new page</h2>
+    </div>
+    <script>
+      function buttonClick() {
+        window.location.href = "home.html";
+      }
+    </script>
+  </body>
+</html>
