@@ -1,1 +1,2 @@
-https://diwakarchaudhary07.github.io/my-portfolio/
+https://github.com/diwakarchaudhary07/my-portfolio/blob/main/portfolio.html
+
