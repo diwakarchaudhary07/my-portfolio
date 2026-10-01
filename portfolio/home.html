@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Diwakar Chaudhary | Portfolio</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(81, 150, 228);
+        color: black;
+      }
+
+      /* ================= NAVBAR ================= */
+
+      nav {
+        width: 100%;
+        padding: 18px 7%;
+        background-color: whitesmoke;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .logo {
+        font-size: 25px;
+        font-weight: bold;
+        color: black;
+      }
+
+      .logo span {
+        color: rgb(81, 150, 228);
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 25px;
+        list-style: none;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: rgb(81, 150, 228);
+      }
+
+      /* ================= HERO ================= */
+
+      .hero {
+        min-height: 90vh;
+        padding: 70px 7%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+      }
+
+      .hero-content {
+        max-width: 650px;
+      }
+
+      .hero-content h4 {
+        color: whitesmoke;
+        font-size: 20px;
+        margin-bottom: 12px;
+      }
+
+      .hero-content h1 {
+        font-size: 55px;
+        color: whitesmoke;
+        margin-bottom: 15px;
+      }
+
+      .hero-content h1 span {
+        color: black;
+      }
+
+      .hero-content p {
+        font-size: 18px;
+        line-height: 1.7;
+        color: black;
+        margin-bottom: 25px;
+      }
+
+      .typing {
+        font-size: 21px;
+        font-weight: bold;
+        color: whitesmoke;
+        margin-bottom: 30px;
+      }
+
+      .hero-buttons {
+        display: flex;
+        gap: 15px;
+      }
+
+      .btn {
+        padding: 13px 25px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+        border: 2px solid whitesmoke;
+      }
+
+      .btn-primary {
+        background-color: whitesmoke;
+        color: black;
+      }
+
+      .btn-primary:hover {
+        background-color: black;
+        color: whitesmoke;
+      }
+
+      .btn-secondary {
+        background-color: transparent;
+        color: whitesmoke;
+      }
+
+      .btn-secondary:hover {
+        background-color: whitesmoke;
+        color: black;
+      }
+
+      /* ================= PROFILE IMAGE ================= */
+
+      .hero-image img {
+        width: 330px;
+        height: 330px;
+        object-fit: cover;
+
+        border-radius: 50%;
+        border: 8px solid whitesmoke;
+
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      }
+
+      /* ================= COMMON SECTION ================= */
+
+      section {
+        padding: 70px 7%;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .section-title h2 {
+        font-size: 35px;
+        color: black;
+      }
+
+      .section-title p {
+        margin-top: 8px;
+        color: whitesmoke;
+      }
+
+      /* ================= SNAPSHOT ================= */
+
+      .snapshot {
+        background-color: whitesmoke;
+      }
+
+      .snapshot-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+
+      .snapshot-card {
+        background-color: rgb(81, 150, 228);
+        padding: 25px;
+        border-radius: 15px;
+        text-align: center;
+
+        transition: 0.3s;
+      }
+
+      .snapshot-card:hover {
+        transform: translateY(-8px);
+      }
+
+      .snapshot-card h3 {
+        color: whitesmoke;
+        margin-bottom: 10px;
+      }
+
+      .snapshot-card p {
+        color: black;
+        line-height: 1.5;
+      }
+
+      /* ================= TECH ================= */
+
+      .tech {
+        background-color: rgb(81, 150, 228);
+      }
+
+      .tech-icons {
+        background-color: whitesmoke;
+        padding: 35px;
+        border-radius: 20px;
+        text-align: center;
+      }
+
+      .tech-icons img {
+        max-width: 100%;
+      }
+
+      /* ================= GITHUB ================= */
+
+      .github {
+        background-color: whitesmoke;
+      }
+
+      .github-stats {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .github-stats img {
+        max-width: 48%;
+        min-width: 300px;
+        border-radius: 10px;
+      }
+
+      /* ================= BANNER ================= */
+
+      .banner {
+        text-align: center;
+        padding: 50px 7%;
+      }
+
+      .banner img {
+        width: 100%;
+        max-height: 250px;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+
+      .quote {
+        margin-top: 20px;
+        font-size: 20px;
+        font-style: italic;
+        color: whitesmoke;
+      }
+
+      /* ================= FOOTER ================= */
+
+      footer {
+        background-color: black;
+        color: whitesmoke;
+        text-align: center;
+        padding: 25px;
+      }
+
+      /* ================= RESPONSIVE ================= */
+
+      @media (max-width: 900px) {
+        .hero {
+          flex-direction: column-reverse;
+          text-align: center;
+        }
+
+        .hero-buttons {
+          justify-content: center;
+        }
+
+        .snapshot-container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .nav-links {
+          gap: 12px;
+        }
+      }
+
+      @media (max-width: 600px) {
+        nav {
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        .nav-links {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .hero-content h1 {
+          font-size: 38px;
+        }
+
+        .hero-image img {
+          width: 230px;
+          height: 230px;
+        }
+
+        .snapshot-container {
+          grid-template-columns: 1fr;
+        }
+
+        .github-stats img {
+          max-width: 100%;
+          min-width: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+      <div class="logo">Diwakar<span>.</span></div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#snapshot">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h4>Hi 👋, I'm</h4>
+
+        <h1>Diwakar <span>Chaudhary</span></h1>
+
+        <p>BCA Student | Aspiring Web Developer | Tech Enthusiast</p>
+
+        <div class="typing">
+          Learning Full-Stack Development • DSA • Python • Creative Web Projects
+        </div>
+
+        <div class="hero-buttons">
+          <a href="#snapshot" class="btn btn-primary"> Explore </a>
+
+          <a
+            href="https://github.com/diwakarchaudhary07"
+            target="_blank"
+            class="btn btn-secondary"
+          >
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="./90a6c985-2fb8-4deb-b068-aaeccdef2815.jpg"
+          alt="Diwakar Chaudhary"
+        />
+      </div>
+    </section>
+
+    <!-- ================= DEVELOPER SNAPSHOT ================= -->
+
+    <section class="snapshot" id="snapshot">
+      <div class="section-title">
+        <h2>Developer Snapshot</h2>
+
+        <p>My current learning and development journey</p>
+      </div>
+
+      <div class="snapshot-container">
+        <div class="snapshot-card">
+          <h3>🎓 Education</h3>
+          <p>
+            Currently pursuing BCA and developing strong programming
+            fundamentals.
+          </p>
+        </div>
+
+        <div class="snapshot-card">
+          <h3>📚 Learning</h3>
+          <p>DSA, Web Technologies, Python and Full-Stack Development.</p>
+        </div>
+
+        <div class="snapshot-card">
+          <h3>🚀 Goal</h3>
+          <p>
+            Building creative and useful projects that solve real-world
+            problems.
+          </p>
+        </div>
+
+        <div class="snapshot-card">
+          <h3>💻 Languages</h3>
+          <p>C, Python, HTML, CSS and JavaScript.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TECH ARSENAL ================= -->
+
+    <section class="tech" id="skills">
+      <div class="section-title">
+        <h2>🛠 Tech Arsenal</h2>
+
+        <p>Technologies and tools I work with</p>
+      </div>
+
+      <div class="tech-icons">
+        <a href="https://skillicons.dev" target="_blank">
+          <img
+            src="https://skillicons.dev/icons?i=c,python,html,css,js,git,github,vscode,linux&perline=10&theme=dark"
+            alt="Skills"
+          />
+        </a>
+      </div>
+    </section>
+
+    <!-- ================= GITHUB ACTIVITY ================= -->
+
+    <section class="github" id="github">
+      <div class="section-title">
+        <h2>📊 GitHub Activity</h2>
+
+        <p>My coding activity and contribution journey</p>
+      </div>
+
+      <div class="github-stats">
+        <img
+          src="https://denvercoder1-github-readme-stats.vercel.app/api?username=diwakarchaudhary07&show_icons=true&theme=tokyonight&hide_border=true"
+          alt="GitHub Stats"
+        />
+
+        <img
+          src="https://github-readme-streak-stats.herokuapp.com/?user=diwakarchaudhary07&theme=tokyonight&hide_border=true"
+          alt="GitHub Streak"
+        />
+      </div>
+    </section>
+
+    <!-- ================= BANNER ================= -->
+
+    <section class="banner" id="contact">
+      <img src="../download.webp" alt="Portfolio Banner" />
+
+      <p class="quote">"The best way to predict the future is to invent it."</p>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+      <p>© 2026 Diwakar Chaudhary | BCA Student & Web Developer</p>
+    </footer>
+  </body>
+</html>
+
